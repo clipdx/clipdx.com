@@ -3,6 +3,7 @@ services:
     build: ./nginx
     ports:
       - "80:80"
+      - "443:443"
     stdin_open: true # docker run -i
     tty: true # docker run -t
 
