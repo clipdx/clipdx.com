@@ -1,0 +1,7 @@
+{
+  "description": "See README.md",
+  "type": "commonjs",
+  "dependencies": {
+    "@reedspool/html-wiki": "^0.0.9"
+  }
+}

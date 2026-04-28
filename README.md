@@ -60,6 +60,31 @@ docker compose logs -f # -f for tail
 
 ### local:upload
 
+Uploads local contents to the correct place on the server for normal operation.
+
+Note you must run `local:web-build` before this for any updates to the website to appear.
+
+Note you must run `server:serve` on the server after this for updates to appear.
+
 ```sh
-rsync -rav . root@clipdx.com:/root/clipdx.com/ --exclude=.git
+rsync -rav . root@clipdx.com:/root/clipdx.com/ --exclude=.git --exclude=web
+rsync -rav ./web/build/ root@clipdx.com:/root/clipdx.com/nginx/site/
+```
+
+### local:web-serve
+
+For local development, it's nice to run the website locally.
+
+```sh
+cd web/
+DEBUG=* npx html-wiki server -u entries --port 3142
+```
+
+### local:web-build
+
+```sh
+cd web/
+rm -rf build
+mkdir build
+DEBUG=* npx html-wiki generate -u entries -o build
 ```

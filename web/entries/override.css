@@ -1,0 +1,30 @@
+:root {
+  --bg: hsl(307deg 100% 91.96%); /* "burlywood" light brown */
+  --bg-darker: hsl(307 100% 88%); /* darker */
+  --bg-lighter: hsl(307 100% 96%); /* darker */
+  --fg: hsl(0deg 0% 17%); /* dark, dark gray */
+  --fg-lighter: hsl(0deg 0% 27%); /* dark, dark gray */
+  --phi: 1.618;
+  --space: 1rem;
+  --space-phi: calc(var(--space) * var(--phi));
+  --space-2: calc(var(--space) * 2);
+  --space-half: calc(var(--space) * 0.5);
+  --space-quarter: calc(var(--space) * 0.25);
+  --space-eigth: calc(var(--space) * 0.125);
+  --fancy: monospace;
+  --prose: "Times New Roman";
+
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.text-bigish {
+  font-size: 1.2rem;
+}
+
+.text-normal {
+  font-size: 1rem;
+}

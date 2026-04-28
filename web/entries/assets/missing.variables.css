@@ -1,0 +1,160 @@
+/* Overrides values from https://missing.style/ */
+/* Started with a copy of https://github.com/bigskysoftware/missing/blob/dev/src/variables.css */
+:root {
+  font-size: 20px;
+  /* Colors */
+  --fg: light-dark(var(--color-gray-100), var(--color-gray-50)); /* Text. */
+  --muted-fg: light-dark(
+    var(--gray-10),
+    var(--gray-2)
+  ); /* Secondary text color.
+	Will be used with a background of --bg, --box-bg, and --interactive-bg -- check contrast! */
+  --faded-fg: light-dark(
+    var(--gray-6),
+    var(--gray-7)
+  ); /* Disabled text color. */
+  --graphical-fg: var(
+    --plain-graphical-fg
+  ); /* Graphical elements. Will not be used as a text color. */
+
+  --plain-fg: light-dark(var(--color-pdx-blue-500), var(--color-pdx-blue-100));
+  --info-fg: light-dark(var(--color-pdx-blue-600), var(--color-pdx-blue-200));
+  --ok-fg: light-dark(var(--green-11), var(--green-2));
+  --bad-fg: light-dark(var(--red-11), var(--red-2));
+  --warn-fg: light-dark(var(--color-pdx-yellow-900), var(--yellow-100));
+
+  --plain-graphical-fg: light-dark(
+    var(--color-pdx-yelllow-200),
+    var(--color-pdx-yellow-950)
+  );
+  --info-graphical-fg: light-dark(
+    var(--color-pdx-blue-400),
+    var(--color-pdx-blue-400)
+  );
+  --ok-graphical-fg: light-dark(
+    var(--color-pdx-green-800),
+    var(--color-pdx-green-800)
+  );
+  --bad-graphical-fg: light-dark(var(--red-6), var(--red-6));
+  --warn-graphical-fg: light-dark(
+    var(--color-pdx-yellow-600),
+    var(--color-pdx-yellow-600)
+  );
+
+  --bg: light-dark(
+    var(--color-pdx-green-500),
+    var(--color-pdx-green-700)
+  ); /* Page background. */
+  --box-bg: var(
+    --plain-bg
+  ); /* Background for blocks: cards, admonitions etc. */
+  --interactive-bg: light-dark(
+    var(--gray-4),
+    var(--gray-8)
+  ); /* Background for interactive elements. */
+  --pressed-interactive-bg: var(
+    --bg
+  ); /* Background for interactive elements with [aria-pressed|expanded=true] */
+
+  --plain-bg: light-dark(
+    var(--color-pdx-green-400),
+    var(--color-pdx-green-800)
+  );
+  --info-bg: light-dark(var(--color-pdx-blue-50), var(--color-pdx-blue-600));
+  --ok-bg: light-dark(var(--green-1), var(--green-12));
+  --bad-bg: light-dark(var(--red-1), var(--red-12));
+  --warn-bg: light-dark(
+    var(--color-pdx-yellow-300),
+    var(--color-pdx-yellow-400)
+  );
+
+  --accent: light-dark(
+    var(--color-pdx-yellow-300),
+    var(--color-pdx-blue-200)
+  ); /* Accent color.
+	Will be used *as a text color* with a background of --box-bg and --pressed-interactive-bg -- check contrast! */
+  --muted-accent: light-dark(
+    var(--color-pdx-blue-400),
+    var(--color-pdx-blue-400)
+  ); /* Muted accent color. Will not be used for text. */
+
+  /* Lengths */
+  --rhythm: 1.4rem; /* Deprecated, but must provide in case people use it in calc() */
+  --line-length: 40rem; /* Maximum line length for prose. */
+  --input-inline-size: 20ch; /* Default size for text inputs and selects. */
+
+  /* Borders */
+  --border-width: 1px; /* Single value; set for uniform border widths */
+  --border-block-start-width: var(--border-width);
+  --border-block-end-width: var(--border-width);
+  --border-inline-start-width: var(--border-width);
+  --border-inline-end-width: var(--border-width);
+  --border-style: solid; /* Single value; set for uniform border styles */
+  --border-block-start-style: var(--border-style);
+  --border-block-end-style: var(--border-style);
+  --border-inline-start-style: var(--border-style);
+  --border-inline-end-style: var(--border-style);
+  --border-radius: 0.2rem; /* Accepts multiple values, e.g. 1em 0 */
+
+  --interactive-border-width: var(--border-width); /* Single value */
+  --interactive-border-style: var(--border-style); /* Single value */
+  --interactive-border-radius: 0.2rem; /* Single value */
+
+  --chip-border-width: var(--border-width); /* Single value */
+  --chip-border-style: var(--border-style); /* Single value */
+
+  --tab-border-radius: 0.4em; /* Single value */
+
+  /* Interactive shadows */
+  --shadow: 0 2px 4px -2px var(--fg);
+  --shadow-focus: 0 3px 6px -2px var(--fg);
+  --shadow-active: none;
+  --shadow-disabled: none;
+  --pressed-shadow: 0 2px 4px -1px var(--fg) inset;
+  --pressed-shadow-focus: 1 1px 3px -1px var(--fg) inset;
+  --pressed-shadow-active: 0 1px 5px -1px var(--fg) inset;
+
+  /* Fonts */
+  --main-font:
+    "Source Sans 3", "Source Sans Pro", -apple-system, system-ui, sans-serif;
+  --secondary-font: var(--main-font); /* UI elements and captions */
+  --display-font: var(--secondary-font); /* Headings */
+  --mono-font:
+    "M Plus Code Latin", monospace, monospace; /* monospace twice stops browsers from shrinking this */
+
+  /* Markers */
+  --breadcrumb-page: " / ";
+  --breadcrumb-step: " › ";
+
+  /* Density */
+  --density: 1;
+
+  /* Width */
+  --full-width: 100vi;
+  --sidebar-width: 25ch;
+  --wcag-target-size-aa: 24px;
+  --wcag-target-size-aaa: 44px;
+
+  /* Icons: https://lucide.dev/ */
+  --chevron-down-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>');
+  --check-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>');
+  --square-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>');
+  --square-check-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 12 2 2 4-4"/></svg>');
+}
+
+:root:not(:has(meta[name="color-scheme"])) {
+  /* Deprecated classes */
+  &.-dark-theme {
+    color-scheme: dark;
+  }
+  &.-no-dark-theme {
+    color-scheme: light;
+  }
+  &:not(.-dark-theme, .-no-dark-theme) {
+    color-scheme: light dark;
+  }
+}
+
+* {
+  --gap: calc(var(--rhythm, 1rlh) * var(--density));
+}

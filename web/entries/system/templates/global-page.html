@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta itemprop="nocontainer" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title><r- content=title>Computers Like Portland</r-></title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <meta name="description" content="PDX Events and Technology" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.3.0" />
+    <link rel="stylesheet" href="/assets/colors.css" />
+    <link rel="stylesheet" href="/assets/missing.variables.css" />
+    <link rel="stylesheet" href="/assets/missing.overrides.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <nav aria-label="Main navigation">
+        <img
+          style="width: 100px; height: 24px; object-fit: cover"
+          src="/assets/portland-flag-glitched.png"
+        />
+        <a href="/">Computers Like Portland</a>
+        <r- if="parameters?.originalParameters?.static === undefined">
+          <ul role="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recent.html">Recent</a></li>
+            <li><a href="/system/templates/keyword.html">Keywords</a></li>
+            <li><a href="?edit" title="Edit this page">✏️</a></li>
+            <li>
+              <a href="/system/actions/create.html" title="Create new">⊕</a>
+            </li>
+            <li>
+              <a href="/system/actions/search-and-link.html" title="Search"
+                >🔍</a
+              >
+            </li>
+            <li>
+              <a href="" target="_blank" title="Open in new tab">⎘</a>
+            </li>
+          </ul>
+        </r->
+      </nav>
+    </header>
+    <r- if="parameters?.originalParameters?.statusMessage">
+      <p class="warn box">
+        <span x-content="parameters?.originalParameters?.statusMessage"></span>
+        <button
+          class="info <button> iconbutton"
+          type="button"
+          onclick="this.closest('.box').remove()"
+          title="Dismiss"
+        >
+          Ⓧ
+        </button>
+      </p>
+    </r->
+    <main x-content="content" />
+    <footer>
+      <section role="toolbar" aria-label="Secondary navigation">
+        <a href="/">Home</a>
+        <r- if="parameters?.originalParameters?.static === undefined">
+          <a href="/recent.html">Recent</a>
+          <a href="/system/templates/keyword.html">Keywords</a>
+        </r->
+        <a href="#">Top of page ⤴</a>
+      </section>
+    </footer>
+  </body>
+</html>

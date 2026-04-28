@@ -1,0 +1,5 @@
+:root {
+  .warn {
+    color: var(--warn-fg);
+  }
+}
