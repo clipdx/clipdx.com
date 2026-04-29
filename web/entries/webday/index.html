@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Web Day!</title>
+    <base href="/webday/" />
+    <meta itemprop="nocontainer" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Hachi+Maru+Pop&family=Yarndings+20&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --prose-font-family: "Caladea", serif;
+        --fancy-font-family: "Hachi Maru Pop", cursive;
+
+        font: 1rem/1.4 var(--prose-font-family);
+        font-size: 20px;
+
+        background-image: url(./puzzlepieces.png);
+        background-color: #a1a1a1;
+        filter: hue-rotate(90deg);
+        --animation-prefix: 60s infinite forwards;
+        animation: var(--animation-prefix) rotate-hue;
+        color: #3d3d3d;
+        text-wrap: pretty;
+      }
+
+      @keyframes rotate-hue {
+        from {
+          filter: hue-rotate(0deg);
+        }
+        to {
+          filter: hue-rotate(360deg);
+        }
+      }
+
+      @keyframes rotate-hue-reverse {
+        from {
+          filter: hue-rotate(0deg);
+        }
+        to {
+          filter: hue-rotate(-360deg);
+        }
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        filter: hue-rotate(-90deg);
+        animation: var(--animation-prefix) rotate-hue-reverse;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--fancy-font-family);
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        text-shadow: 3px 3px 2px rgb(200 158 28 / 80%);
+        animation: var(--animation-prefix) rotate-hue;
+      }
+      h1 {
+        font-size: 4.2em;
+        text-align: center;
+        margin-block-start: 0.4em;
+        line-height: 0.6;
+      }
+      h2 {
+        text-align: left;
+        font-size: 1.6em;
+      }
+
+      a {
+        color: darkblue;
+        &:visited {
+          color: deeppink;
+        }
+      }
+
+      layout-center {
+        display: block;
+        margin-inline: auto;
+
+        @media (min-width: 48ch) {
+          width: max-content;
+        }
+
+        &[fill] {
+          --bg: rgb(226 226 226 / 97%);
+          background-color: var(--bg);
+          padding-inline: 4rem;
+          padding-top: 1rem;
+          --blur: 2rem;
+          box-shadow: 0 0 var(--blur) var(--blur) var(--bg);
+          @media (min-width: 48ch) {
+            max-width: 48ch;
+          }
+        }
+      }
+
+      .silly,
+      .yarndings-20-regular {
+        font-size: 0.8em;
+        font-family: "Yarndings 20", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <set- webday="load('/webday/webday.mts')" />
+    <set-
+      start="{year: 2026, month: 5, day: 16, hour: 12, minute: 0, timeZone: 'America/Los_Angeles'}"
+      end="{year: 2026, month: 5, day: 16, hour: 17, minute: 30, timeZone: 'America/Los_Angeles'}"
+    />
+    <!-- <set-
+          mastodon_href="'https://indieweb.social/@Loopsaround/116096139529959787'"
+          bsky_href="'https://bsky.app/profile/loopsaround.bsky.social/post/3mf73kl7yxc23'"
+        /> -->
+    <layout-center fill class="h-event">
+      <h1 class="p-name">Web Day!</h1>
+
+      <p class="silly">Create The Web You Want To See!</p>
+
+      <!-- <p>
+            <a
+              href="https://crypt.unredacted.org/doc/#/2/doc/edit/ZqVfCpH1k28R9-A+3soFiSKc/"
+              >Live Event Activities Document!</a
+            >
+          </p>
+     -->
+      <p>
+        Feel isolated by the endless scroll? Come search, connect, and link with
+        us!
+      </p>
+
+      <h2>When & Where?</h2>
+
+      <p>
+        <time
+          x-datetime="webday.timeDateTime(start)"
+          class="dt-start"
+          x-content="webday.dateTimeHuman(start)"
+        />
+        until
+        <time
+          x-datetime="webday.timeDateTime(end)"
+          class="dt-end"
+          x-content="webday.timeHuman(end)"
+        />
+        <!-- Helpful converter https://dateful.com/convert/utc -->
+        (<a
+          x-href="`https://calendar.google.com/calendar/r/eventedit?text=Web+Day&dates=${webday.isoFlatDateTime(start)}Z/${webday.isoFlatDateTime(end)}Z&details=Community Room 2A.+For+more+details,+link+here:+https://reeds.website/2026/webday&location=Multnomah+County+Library+-+Albina,+205+NE+Russell+St,+Portland,+OR+97212,+USA`"
+          >add to your google calendar</a
+        >) @
+        <span class="p-location"
+          >Albina Library, Community&nbsp;Room&nbsp;2A</span
+        >
+        (<a
+          href="https://maps.app.goo.gl/knehFhe2ZpHabVre7"
+          title="Albina Library (Google Maps)"
+          >directions</a
+        >)
+      </p>
+
+      <layout-center>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2794.4523362023715!2d-122.6658426!3d45.5412254!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a73ad8d252db%3A0x1561712005970dfe!2sMultnomah%20County%20Library%20-%20Albina!5e0!3m2!1sen!2sus!4v1761633604924!5m2!1sen!2sus"
+          width="300"
+          height="225"
+          style="border: 0; display: block"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </layout-center>
+
+      <h2>What is Web Day?</h2>
+
+      <p class="p-summary">
+        When you come to Web Day, you'll sit down with someone and share
+        keyboard, mouse, and browser to explore the Endless Web. In the past, we
+        played games (every Flash game ever!), delved into local Portland
+        services and historical data, made new web pages, and clicked a lot of
+        links.
+      </p>
+
+      <h2>How does it work?</h2>
+
+      <p>
+        You can come in any time, for 5 minutes or an hour. Play one little game
+        or spend the whole time exploring.
+      </p>
+
+      <p>
+        As the organizer, I will pair you up when you come in. We share a live
+        document (like a Google Doc) of suggested activities to try out, like
+        "find a 2-player game", or "find a page full of jokes". You'll choose
+        one of those or bring up your own idea. Every 30 minutes we get up for 5
+        minutes to stretch, look away from the screen, get a drink of water, and
+        rotate who is paired up so everyone meets different people.
+      </p>
+
+      <p>
+        You don't need to bring anything, just show up for yourself and your
+        community. If you want to, you can bring your laptop and external
+        keyboard and mouse (bluetooth or wired) are nice to have.
+      </p>
+
+      <h2>Why?</h2>
+
+      <p>
+        Maybe as you read the above you thought, "You just surf the web?
+        Seriously?" Exactly! Web Day is silly, mundane, and banal
+        <em>together, in person</em>.
+      </p>
+
+      <p>
+        When you sit down with us, next to a stranger or a friend, and explore
+        open, free websites built by human hands, you directly combat the
+        fascist forces which would prefer we stayed separated and locked into
+        echo chambers.
+      </p>
+
+      <p>
+        Technology can connect us, but the version we get at home or on our
+        phone is broken. We continue this month after month because we feel it's
+        different, it's special, and it's real connection &mdash; connection to
+        each other and The World Wide Web.
+      </p>
+
+      <p>
+        So, come play a Flash game. Or click around a web ring. Dream of a
+        future where this doesn't feel so weird, and make that future a reality
+        with us.
+      </p>
+
+      <p class="silly">You Deserve To Be On The Web!</p>
+
+      <h2>Share!</h2>
+      <p>
+        Share
+        <r- if="mastodon_href">
+          <a x-href="mastodon_href" title="Web Day posted on Mastodon"
+            >the event post on Mastodon</a
+          >
+          and
+        </r->
+        <r- if="bsky_href">
+          <a x-href="bsky_href" title="Web Day posted on Bluesky"
+            >the event posted on Bluesky</a
+          >
+          and
+        </r->
+        with your friends! Just send them this link!
+      </p>
+
+      <p class="silly">Free And Open Web For All!</p>
+
+      <h2>Rules and Code of Conduct</h2>
+      <p>
+        Participants must follow all of
+        <a
+          href="https://multcolib.org/policies/multnomah-county-library-rules"
+          title="Multnomah County Library Rules"
+          >the library rules</a
+        >
+        and we ask that everyone follow the
+        <a
+          href="https://indieweb.org/code-of-conduct"
+          title="Indie Web Code of Conduct"
+          >IndieWeb Code of Conduct</a
+        >. This is not an IndieWeb event, they're just great guidelines for a
+        welcoming, creative environment.
+      </p>
+    </layout-center>
+  </body>
+</html>

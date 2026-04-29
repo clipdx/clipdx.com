@@ -88,3 +88,13 @@ rm -rf build
 mkdir build
 DEBUG=* npx html-wiki generate -u entries -o build
 ```
+
+### local:update-html-wiki
+
+[@reedspool/html-wiki](https://github.com/reedspool/html-wiki) updates often enough that want a quick way to do this.
+
+```sh
+cd web/
+npm remove @reedspool/html-wiki && \
+  npm install @reedspool/html-wiki
+```
