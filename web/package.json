@@ -3,7 +3,7 @@
   "type": "commonjs",
   "dependencies": {
     "@date-fns/tz": "^1.4.1",
-    "@reedspool/html-wiki": "^0.0.12",
+    "@reedspool/html-wiki": "^0.0.14",
     "date-fns": "^4.1.0",
     "toml": "^4.1.1"
   },
