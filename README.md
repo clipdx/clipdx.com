@@ -1,5 +1,7 @@
 # Computers Like Portland Website
 
+![portland flag glitched](web/entries/assets/portland-flag-glitched.png)
+
 Live at https://clipdx.com
 
 ## Development Setup
