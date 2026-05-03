@@ -6,4 +6,5 @@ services:
       - "443:443"
     stdin_open: true # docker run -i
     tty: true # docker run -t
+    restart: always # Re-run after server restart/crash
 

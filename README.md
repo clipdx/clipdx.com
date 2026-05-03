@@ -15,21 +15,26 @@ them to your terminal. Some lines below like `interactive: true` are for `xc`.
 sudo apt install rsync
 ```
 
-## Tasks
+## New server setup
 
-These are the development script snippets.
+Very unlikely these steps are exactly reproduceable, so read this more like a notebook than a script to run. Shouldn't need to run this more than once on a new VM. These are all tested on a Hetzner Cloud instance running Ubuntu 24.04.
 
-[![xc compatible](https://xcfile.dev/badge.svg)](https://xcfile.dev)
+NOTE: My (Hetzner owner's) SSH keys are placed in automatically by virtue of being installed in the Hetzner console. But for other people's keys, manual step necessary to put into server's `~/.ssh/authorized_keys`.
 
-Note: scripts prefixed with `local:` are meant to be run from your personal computer. Scripts prefixed with `server:` are meant to be run on the server box.
-
-### server:install
+NOTE: Also on a new server will need to set up LetsEncrypt for SSL certificates. See [`hetzner-letsencrypt/README`](./hetzner-letsencrypt/README.md)
 
 ```sh
-# Docker from https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
-sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+# The fresh server image isn't immediately up to date, so start with an upgrade
+apt update && apt upgrade
 
-# Go for https://xcfile.dev/getting-started/#installation
+# Docker from https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+# NOTE: Need to run the big script to add Docker's `apt` repository before these
+apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# This should already be enabled, but worth pointing out this is how `restart: always` in docker-compose.yml will restart the Docker container after the esrver machine reboots.
+sudo systemctl enable docker
+
+# Golang for XC https://xcfile.dev/getting-started/#installation
 curl -L -O https://go.dev/dl/go1.26.2.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.26.2.linux-amd64.tar.gz
 rm go1.26.2.linux-amd64.tar.gz
@@ -37,11 +42,20 @@ rm go1.26.2.linux-amd64.tar.gz
 # Ensure gopath is in .bashrc: export PATH=$PATH:/usr/local/go/bin
 
 # XC
-/usr/local/go install github.com/joerdav/xc/cmd/xc@latest
-# Ensure GOPATH is in .bashrc: export GOPATH=$HOME/go
-# Ensure GOPATH bin is in .bashrc: export PATH=$PATH:$GOPATH/bin
+go install github.com/joerdav/xc/cmd/xc@latest
+# Ensure GOPATH and bin are in .bashrc:
+# export GOPATH=$HOME/go
+# export PATH=$PATH:$GOPATH/bin
 xc --version
 ```
+
+## Tasks
+
+These are the development script snippets.
+
+[![xc compatible](https://xcfile.dev/badge.svg)](https://xcfile.dev)
+
+Note: scripts prefixed with `local:` are meant to be run from your personal computer. Scripts prefixed with `server:` are meant to be run on the server box.
 
 ### server:serve
 
