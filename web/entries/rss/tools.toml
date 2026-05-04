@@ -1,0 +1,4 @@
+[[tools]]
+name = "RSSHub Radar"
+desc = "Chrome Browser Extension to find feeds and subscribe using RSSHub.app"
+tags = "extension, chrome"

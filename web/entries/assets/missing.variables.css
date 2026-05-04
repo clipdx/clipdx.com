@@ -24,8 +24,8 @@
   --warn-fg: light-dark(var(--color-pdx-yellow-900), var(--yellow-100));
 
   --plain-graphical-fg: light-dark(
-    var(--color-pdx-yelllow-200),
-    var(--color-pdx-yellow-950)
+    var(--color-pdx-yellow-200),
+    var(--color-pdx-yellow-400)
   );
   --info-graphical-fg: light-dark(
     var(--color-pdx-blue-400),

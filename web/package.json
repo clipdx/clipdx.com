@@ -3,9 +3,9 @@
   "type": "commonjs",
   "dependencies": {
     "@date-fns/tz": "^1.4.1",
-    "@reedspool/html-wiki": "^0.0.14",
+    "@reedspool/html-wiki": "^0.0.17",
     "date-fns": "^4.1.0",
-    "toml": "^4.1.1"
+    "js-toml": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^25.6.0"

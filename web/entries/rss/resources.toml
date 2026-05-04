@@ -1,0 +1,415 @@
+[[resources]]
+name = "Army Corps of Engineers"
+desc = "a list of RSS feeds for different districts"
+pageUrl = "https://www.nwp.usace.army.mil/Contact/RSS/"
+tags = "government, transportation, transit"
+
+[[resources]]
+name = "Portland Mercury"
+desc = "Local news"
+pageUrl = "https://www.portlandmercury.com"
+feedUrl = "https://www.portlandmercury.com/feed"
+tags = "news"
+
+[[resources]]
+name = "Willamette Week"
+desc = "Local news"
+pageUrl = "https://www.wweek.com/"
+feedUrl = "https://www.wweek.com/arc/outboundfeeds/rss/?outputType=xml"
+tags = "news"
+
+[[resources]]
+name = "OregonLive"
+desc = "The Oregonian online"
+pageUrl = "https://www.oregonlive.com/"
+feedUrl = "https://www.oregonlive.com/arc/outboundfeeds/rss/?outputType=xml"
+tags = "news"
+
+[[resources]]
+name = "Street Roots"
+desc = "Weekly street newspaper"
+pageUrl = "https://www.streetroots.org/"
+feedUrl = "https://www.streetroots.org/feed"
+tags = "news"
+
+[[resources]]
+name = "The Tenant Tribune"
+desc = "Newsletter of Renters Action Network"
+pageUrl = "https://tenantstribune.noblogs.org/"
+feedUrl = "https://tenantstribune.noblogs.org/feed/"
+tags = "rent, news"
+
+[[resources]]
+name = "North Peninusla Review"
+desc = "North Portland news"
+pageUrl = "https://northpeninsulareview.com/"
+feedUrl = "https://northpeninsulareview.com/feed"
+tags = "news"
+
+[[resources]]
+name = "Rose City Counter-Info"
+desc = "Anarchist counter-info platform in so-called Portland, Oregon"
+pageUrl = "https://rosecitycounterinfo.noblogs.org/"
+feedUrl = "https://rosecitycounterinfo.noblogs.org/feed"
+tags = "anarchy, news"
+
+[[resources]]
+name = "Leave of Women Voters of Portland"
+desc = "Empowering Voters. Defending Democracy."
+pageUrl = "https://lwvpdx.org/"
+feedUrl = "https://lwvpdx.org/feed"
+tags = "democracy, news"
+
+[[resources]]
+name = "Calagator"
+desc = "Unified calendar for the technology community of Portland, Oregon"
+pageUrl = "https://calagator.org/"
+feedUrl = "https://calagator.org/events.atom"
+tags = "events, tech, volunteer"
+
+[[resources]]
+name = "Flyer Escape"
+desc = "Flyers for upcoming Portland metro area shows and events and other things"
+pageUrl = "https://flyerescape.dad/"
+feedUrl = "https://rssguide.neocities.org/feed.txt"
+tags = "events, punk, flyers, music, art"
+
+[[resources]]
+name = "EverOut"
+desc = "Things To Do In Portland"
+pageUrl = "https://everout.com/portland/"
+feedUrl = "https://everout.com/portland/articles/feed"
+tags = "events, food, music"
+
+[[resources]]
+name = "Shift"
+desc = "Bike fun is for everyone!"
+pageUrl = "https://www.shift2bikes.org/"
+feedUrl = "https://www.shift2bikes.org/index.xml"
+tags = "bike, fun, events, transportation, transit"
+
+[[resources]]
+name = "Eliot Neighborhood"
+desc = "Eliot neighborhood association and news"
+pageUrl = "https://eliotneighborhood.org/"
+feedUrl = "https://eliotneighborhood.org/feed/"
+tags = "neighborhood, news, events"
+
+[[resources]]
+name = "Montavilla News"
+desc = "Neighborhood news site focused on buildings and changing businesses"
+pageUrl = "https://montavilla.net"
+feedUrl = "https://montavilla.net/feed"
+tags = "neighborhood, news, business"
+
+[[resources]]
+name = "East PDX News"
+desc = "East Portland's Definitive News Service"
+pageUrl = "https://eastpdxnews.com"
+feedUrl = "https://eastpdxnews.com/feed"
+tags = "neighborhood, news, events"
+
+[[wishlist]]
+name = "Northeast Portland Tool Library"
+desc = "Provides Northeast Portland residents of all income levels access to tools"
+pageUrl = "https://www.neptl.org/"
+tags = "tools, library, resource"
+
+[[wishlist]]
+name = "North Portland Tool Library"
+desc = "Provides North Portland residents of all income levels access to tools"
+pageUrl = "https://nptl.myturn.com/library/"
+tags = "tools, library, resource"
+
+[[wishlist]]
+name = "Southeast Portland Tool Library"
+desc = "Free community resource that provides home and business owners, and tenants, with hand and power tools they need"
+pageUrl = "https://www.septl.org/"
+tags = "tools, library, resource"
+
+[[resources]]
+name = "TriMet Status Updates"
+desc = "TriMet removed links to RSS status updates, but the feeds at this archived link still works!"
+pageUrl = "https://trimet.org"
+feedUrl = "https://web.archive.org/web/20180711123453/https://trimet.org/rss/index.htm"
+tags = "transportation, city, government, transit"
+
+[[resources]]
+name = "Vintage Portland"
+desc = "Exploring Portland through a historical lens"
+pageUrl = "https://vintageportland.wordpress.com/"
+feedUrl = "https://vintageportland.wordpress.com/feed"
+tags = "history, vintage"
+
+[[resources]]
+name = "BikePortland"
+desc = "News company that covers transportation in the Portland region"
+pageUrl = "https://bikeportland.org/"
+feedUrl = "https://bikeportland.org/feed"
+tags = "bike, transit, transportation, events, news"
+
+[[resources]]
+name = "Portland Anti-imperialist Action (PAiA)"
+desc = "International mobilization against zionist and imperialist aggression"
+pageUrl = "https://paia.noblogs.org/"
+feedUrl = "https://paia.noblogs.org/feed"
+tags = "anti-imperialist"
+
+[[resources]]
+name = "pdx.community"
+desc = "Accessible central resource & organization hub, activist calendar, campaign promoter, and community connection & collaboration space that is free from algorithmic censorships"
+pageUrl = "https://pdx.community/"
+feedUrl = "https://pdx.community/feed/"
+tags = "news, events"
+
+[[resources]]
+name = "Trash For Peace"
+desc = "Provide hands-on, creative experiences that encourage resilient communities"
+pageUrl = "https://www.trashforpeace.org"
+feedUrl = "https://www.trashforpeace.org/blog-feed.xml"
+tags = "news, environmental"
+
+[[resources]]
+name = "Ecotrust"
+desc = "At the intersection of equity, the economy, and the environment in the pursuit of transformative change"
+pageUrl = "https://ecotrust.org/"
+feedUrl = "https://ecotrust.org/feed"
+tags = "news, environmental"
+
+[[resources]]
+name = "Don't Evict PDX"
+desc = "Resource sharing and organization to build tenant power"
+pageUrl = "https://www.dontevictpdx.org/"
+feedUrl = "https://www.dontevictpdx.org/news?format=rss"
+tags = "news, rent"
+
+[[resources]]
+name = "Friends of Trees"
+desc = "Planting Trees. Together."
+pageUrl = "https://friendsoftrees.org"
+feedUrl = "https://friendsoftrees.org/feed/"
+tags = "environmental, events, volunteer"
+
+[[resources]]
+name = "Metro Family Service"
+desc = "Metropolitan Family Service promotes equity, helps people gain prosperity, and builds a connected community for all ages."
+pageUrl = "https://www.mfspdx.org"
+feedUrl = "https://www.mfspdx.org/whats-new-at-mfs?format=rss"
+tags = "family"
+
+[[resources]]
+name = "Slow Food Portland"
+desc = "Promoting good, clean, fair food in Portland, OR"
+pageUrl = "https://www.slowfoodportland.com/"
+feedUrl = "https://www.slowfoodportland.com/blog?format=rss"
+tags = "food, events"
+
+[[resources]]
+name = "Growing Gardens Blog"
+desc = "practical insights into radical gardening, sustainable agriculture, and community empowerment."
+pageUrl = "https://www.growing-gardens.org"
+feedUrl = "https://www.growing-gardens.org/blog.rss"
+tags = "environmental, gardens, food"
+
+[[resources]]
+name = "Legacy Forest Defense"
+desc = "A leading grassroots forestry watchdog  in the Pacific Northwest"
+pageUrl = "https://www.wlfdc.org"
+feedUrl = "https://www.wlfdc.org/blog-feed.xml"
+tags = "environmental, events"
+
+[[resources]]
+name = "Sisters of the Road"
+desc = "Grassroots, anti-oppression movement dedicated to centering the experiences of our unhoused neighbors"
+pageUrl = "https://www.sistersoftheroad.org"
+feedUrl = "https://www.sistersoftheroad.org/news?format=rss"
+tags = "housing, events"
+
+[[resources]]
+name = "Marie Equi Center"
+desc = "Enriching the health of the trans, queer, gender diverse, & intersex community"
+pageUrl = "https://www.marieequi.center"
+feedUrl = "https://www.marieequi.center/blog?format=rss"
+tags = "lgbtqia"
+
+[[resources]]
+name = "Portland Art Museum"
+desc = "The only major art museum between Seattle and San Francisco"
+pageUrl = "https://portlandartmuseum.org"
+feedUrl = "https://portlandartmuseum.org/feed/"
+tags = "events, art, blog"
+
+[[resources]]
+name = "Panic"
+desc = "An independent software company with about 30 employees and a lot going on"
+pageUrl = "https://panic.com/"
+feedUrl = "https://www.panic.com/blog/feed"
+tags = "software, video-games, games, tech, blog"
+
+[[resources]]
+name = "Zenger Farm"
+desc = "A working urban farm that models, promotes, and educates about sustainable food systems, environmental stewardship, community development, and access to good food for all"
+pageUrl = "https://zengerfarm.org"
+feedUrl = "https://zengerfarm.org/feed/"
+tags = "environmental, blog"
+
+[[resources]]
+name = "Green Anchors PDX"
+desc = "Eco Industrial Creative Space for Artists & Local Business"
+pageUrl = "https://www.greenanchorspdx.com"
+feedUrl = "https://www.greenanchorspdx.com/feed/"
+tags = "business, environmental, art, rent"
+
+[[resources]]
+name = "The Arctos School"
+desc = "Herbal and botanical studies connecting people and plants since 2007"
+pageUrl = "https://arctosschool.org"
+feedUrl = "https://arctosschool.org/blog?format=rss"
+tags = "environmental, classes, blog"
+
+[[resources]]
+name = "SymbiOp Garden Shop"
+desc = "Worker-owned ecological garden shop, cultivating biodiverse & climate-chaos resilient food systems"
+pageUrl = "https://symbiop.com"
+feedUrl = "https://symbiop.com/feed/"
+tags = "environmental, shop, food, blog"
+
+[[resources]]
+name = "Past Lives Makerspace"
+desc = "Makerspace providing members 24/7 secure access to wood shop, metal shop with blacksmithing, and much more"
+pageUrl = "https://www.pastlives.space"
+feedUrl = "https://www.pastlives.space/news?format=rss"
+tags = "makerspace, art"
+
+[[resources]]
+name = "Clinton Street Theater"
+desc = "Portland's fiercely independent theater and community space for all things weird and wonderful"
+pageUrl = "https://cstpdx.com"
+feedUrl = "https://cstpdx.com/schedule/feed/"
+tags = "events, film, movies, lqgbtqia, art"
+
+[[resources]]
+name = "Movie Madness"
+desc = "Movies. Museum. Miniplex. MADNESS"
+pageUrl = "https://www.moviemadness.org"
+feedUrl = "https://www.moviemadness.org/events/feed/"
+tags = "events, film, movies, art"
+
+[[resources]]
+name = "Repair PDX"
+desc = "Spreading repair culture through repair cafes where volunteers fix broken household items for free and workshops"
+pageUrl = "https://www.repairpdx.org"
+feedUrl = "https://www.repairpdx.org/blog-feed.xml"
+tags = "education, classes, events, repair, diy"
+
+[[resources]]
+name = "The Bhakti Yoga Movement Center"
+desc = "Practices for personal and collective liberation"
+pageUrl = "https://www.thebymc.com"
+feedUrl = "https://www.thebymc.com/blog-feed.xml"
+tags = "bipoc, sea, exercise, lqbtqia, classes, events"
+
+[[resources]]
+name = "Seagrape Apothecary"
+desc = "A global community of babes with a mission to help you transform self-care into a love affair"
+pageUrl = "https://seagrapeapothecary.com"
+feedUrl = "https://seagrapeapothecary.com/blogs/seagrape-apothecary.atom"
+tags = "blog, shop, classes"
+
+[[resources]]
+name = "freakscene"
+desc = "(requires login) Community-run platform connecting local art scenes on an underground digital paradise"
+pageUrl = "https://freakscene.us/"
+tags = "events, music"
+
+[[wishlist]]
+name = "Multnomah County Libraries"
+desc = "Portland's Libraries"
+pageUrl = "https://multcolib.org/"
+tags = "library, events, education"
+
+[[wishlist]]
+name = "Portland Bureau of Transportation Projects"
+desc = "All planned and ongoing projects by PBOT"
+pageUrl = "https://www.portland.gov/transportation/pbot-projects"
+tags = "transporation, transit, city"
+
+[[wishlist]]
+name = "Portland.gov Changes to charter, code, and policies"
+desc = "Postings for important changes from our local government"
+pageUrl = "https://www.portland.gov/charter-code-policies/changes"
+tags = "city, policy"
+
+[[wishlist]]
+name = "Portland.gov Neighborhoods Pages"
+desc = "Events for each neighborhood"
+pageUrl = "https://www.portland.gov/neighborhoods"
+tags = "city"
+
+[[wishlist]]
+name = "Portland Parks and Recs Events"
+desc = "Happenings in our beautiful city parks"
+pageUrl = "https://www.portland.gov/parks/events"
+tags = "environmental, volunteer, city"
+
+[[wishlist]]
+name = "Portland Synth Library"
+desc = "Collectively-run 501(c)(3) arts non-profit providing low-cost access to electronic music gear and education."
+pageUrl = "https://www.synthlibraryportland.org/events"
+tags = "events, music, volunteer, library, art, education, classes"
+
+[[wishlist]]
+name = "OMSI"
+desc = "Oregon Museum of Science and Industry"
+pageUrl = "https://omsi.edu"
+tags = "science, events, education"
+
+[[wishlist]]
+name = "Hollywood Theater"
+desc = "Portland’s Premier Modern-Historic Movie House"
+pageUrl = "https://hollywoodtheatre.org"
+tags = "film, movies, art, events"
+
+[[resources]]
+name = "Concordia Neighborhood Association"
+desc = "Inform, educate and report on activities, issues and opportunities of the neighborhood"
+pageUrl = "https://concordiapdx.org/"
+feedUrl = "https://concordiapdx.org/feed"
+tags = "neighborhood, news"
+
+[[resources]]
+name = "Portland Makes Games"
+desc = "Collective of game makers living in Portland, Oregon. We organize and attend events in town."
+pageUrl = "https://pdxmakes.games/"
+feedUrl = "https://buttondown.com/pdxmakesgames/rss"
+tags = "games, videogames, events, blog"
+
+[[wishlist]]
+name = "Portland Frog Brigade"
+desc = "Portland Frog Brigade uses inflatable animal costumes to practice the proven art of peaceful, creative dissent, exercising our right to free expression in defense of the U.S. Constitution and the rule of law."
+pageUrl = "https://www.portlandfrogbrigade.com/"
+tags = "resistance, nonviolence"
+
+[[wishlist]]
+name = "PIRC"
+desc = "Portland Immigrant Rights Coalition"
+pageUrl = "https://pircoregon.org/"
+tags = "immigrants, human-rights"
+
+[[wishlist]]
+name = ""
+desc = "Immigrant Mutual Aid Coalition"
+pageUrl = "http://www.imacpdx.org/"
+tags = "immigrant, human-rights, mutual-aid"
+
+[[wishlist]]
+name = "Portland Chamber Music"
+desc = "Brings together musicians and audiences from all walks of life in quality, welcoming performances and music education that is accessible to all."
+pageUrl = "https://www.pdxchambermusic.org/"
+tags = "events, music, education"
+
+[[wishlist]]
+name = "The Swana Rose"
+desc = "Culture and Community Center"
+pageUrl = "https://www.swanarosepdx.org/"
+tags = "location, events, library"
