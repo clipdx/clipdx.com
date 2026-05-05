@@ -7,4 +7,11 @@ services:
     stdin_open: true # docker run -i
     tty: true # docker run -t
     restart: always # Re-run after server restart/crash
-
+    volumes:
+      # :ro for read-only
+      # Placed by README.md -> Tasks -> local:upload
+      - ./web-build/:/usr/share/nginx/html:ro
+      # See https://stackoverflow.com/a/68126811 for why two volumes for letsencrypt
+      # nginx.conf must read from /live here (symlinked to /archive)
+      - /etc/letsencrypt/live/clipdx.com/:/etc/letsencrypt/live/clipdx.com:ro
+      - /etc/letsencrypt/archive/clipdx.com/:/etc/letsencrypt/archive/clipdx.com:ro

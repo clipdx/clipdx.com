@@ -59,19 +59,20 @@ Note: scripts prefixed with `local:` are meant to be run from your personal comp
 
 ### server:serve
 
-NOTE: If this is updated, it must be updated in `hetzner-letsencrypt/post-renew.sh` as well. Could probably just call `xc` from in there, but I didn't want to risk any additional variables to the auto renew process at time of writing until I'd seen it work once or twice, after a month or two.
+When logged into the server (`ssh <user>@clipdx.com`), and in the `clipdx.com` directory, do `xc server:serve` to run this.
+
+Updates and runs/restarts the `Docker` containers. This should not be necessary for normal web updates, as the built website is bind-mounted into the container.
 
 ```sh
-# Copy the live versions of the keys to the build directory since Docker can't reach down into /etc
-cp /etc/letsencrypt/live/clipdx.com/fullchain.pem ~/clipdx.com/nginx/fullchain.pem
-cp /etc/letsencrypt/live/clipdx.com/privkey.pem ~/clipdx.com/nginx/privkey.pem
 docker compose up --detach --build
 ```
 
 ### server:logs
 
+Watch the docker logs. `-f` is for "follow", like `tail -f`.
+
 ```sh
-docker compose logs -f # -f for tail
+docker compose logs -f
 ```
 
 ### local:upload
@@ -80,11 +81,11 @@ Uploads local contents to the correct place on the server for normal operation.
 
 Note you must run `local:web-build` before this for any updates to the website to appear.
 
-Note you must run `server:serve` on the server after this for updates to appear.
+Any changes to the website will immediately appear (i.e. on refresh of the webpage)
 
 ```sh
 rsync -rav . root@clipdx.com:/root/clipdx.com/ --exclude=.git --exclude=web
-rsync -rav ./web/build/ root@clipdx.com:/root/clipdx.com/nginx/site/
+rsync -rav ./web/build/ root@clipdx.com:/root/clipdx.com/web-build/
 ```
 
 ### local:web-serve
