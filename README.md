@@ -6,7 +6,7 @@ Live at https://clipdx.com
 
 ## Development Setup
 
-To SSH (or rsync) onto the website, you will need your public SSH keys on the server. Speak with management.
+To SSH (or rsync) onto the website server, speak with management.
 
 You can run the scripts below (Tasks) easily with [`xc`](https://xcfile.dev), or just copy
 them to your terminal. Some lines below like `interactive: true` are for `xc`.
