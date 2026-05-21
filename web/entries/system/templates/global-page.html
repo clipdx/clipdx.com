@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta itemprop="nocontainer" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title><r- content=title>Computers Like Portland</r-></title>
+    <title>
+      <r- content="title ?? parameters?.originalParameters?.title">Computers
+      Like Portland</r->
+    </title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
