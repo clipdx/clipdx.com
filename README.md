@@ -15,6 +15,14 @@ them to your terminal. Some lines below like `interactive: true` are for `xc`.
 sudo apt install rsync
 ```
 
+### Setting up Nix for this project
+
+It is possible to manage all required dependencies using Nix, allowing you to isolate this development environment from the rest of your machine.
+
+If you want to do this, you'll need first to install Nix. Usually, the best way is through the official installation script. There are directions [here](https://nixos.org/download/#nix-install-linux).
+
+Once you have Nix installed, you can run `nix develop` in the root directory of this project. It will launch a Nix development shell, and will include all required dependencies for you to run the scripts below (it may take some time the first time you launch it, as it installs the project dependencies.)
+
 ## New server setup
 
 Very unlikely these steps are exactly reproduceable, so read this more like a notebook than a script to run. Shouldn't need to run this more than once on a new VM. These are all tested on a Hetzner Cloud instance running Ubuntu 24.04.
