@@ -126,13 +126,14 @@
   <body>
     <set- webday="load('/webday/webday.mts')" />
     <set-
-      start="{year: 2026, month: 6, day: 20, hour: 12, minute: 0, timeZone: 'America/Los_Angeles'}"
-      end="{year: 2026, month: 6, day: 20, hour: 17, minute: 30, timeZone: 'America/Los_Angeles'}"
+      start="{year: 2026, month: 7, day: 20, hour: 12, minute: 30, timeZone: 'America/Los_Angeles'}"
+      end="{year: 2026, month: 7, day: 20, hour: 17, minute: 30, timeZone: 'America/Los_Angeles'}"
     />
     <set-
       mastodon_href="'https://pdx.social/@clipdx/116770010233673744'"
       bsky_href="'https://bsky.app/profile/clipdx.com/post/3mokdr54bak2t'"
     />
+
     <layout-center fill class="h-event">
       <h1 class="p-name">Web Day!</h1>
 
@@ -170,11 +171,12 @@
         />
         <!-- Helpful converter https://dateful.com/convert/utc -->
         (<a
-          x-href="`https://calendar.google.com/calendar/r/eventedit?text=Web+Day&dates=${webday.isoFlatDateTime(start)}Z/${webday.isoFlatDateTime(end)}Z&details=Community Room 2A.+For+more+details,+link+here:+https://reeds.website/2026/webday&location=Multnomah+County+Library+-+Albina,+205+NE+Russell+St,+Portland,+OR+97212,+USA`"
+          x-href="`https://calendar.google.com/calendar/r/eventedit?text=Web+Day&dates=${webday.isoFlatDateTime(start)}Z/${webday.isoFlatDateTime(end)}Z&details=NEW ROOM! Community Room 1A - First floor.+For+more+details,+link+here:+https://reeds.website/2026/webday&location=Multnomah+County+Library+-+Albina,+205+NE+Russell+St,+Portland,+OR+97212,+USA`"
           >add to your google calendar</a
         >) @
         <span class="p-location"
-          >Albina Library, Community&nbsp;Room&nbsp;2A</span
+          ><strong>NEW ROOM!</strong> Albina Library,
+          Community&nbsp;Room&nbsp;1A</span
         >
         (<a
           href="https://maps.app.goo.gl/knehFhe2ZpHabVre7"
