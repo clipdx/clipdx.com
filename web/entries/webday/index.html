@@ -126,8 +126,9 @@
   <body>
     <set- webday="load('/webday/webday.mts')" />
     <set-
-      start="{year: 2026, month: 7, day: 25, hour: 12, minute: 30, timeZone: 'America/Los_Angeles'}"
-      end="{year: 2026, month: 7, day: 25, hour: 17, minute: 30, timeZone: 'America/Los_Angeles'}"
+      start="{year: 2026, month: 9, day: 12, hour: 13, minute: 00, timeZone: 'America/Los_Angeles'}"
+      end_time="{hour: 17, minute: 30}"
+      end="{ ...start, ...end_time }"
     />
     <set-
       mastodon_href="'https://pdx.social/@clipdx/116770010233673744'"
@@ -171,29 +172,29 @@
         />
         <!-- Helpful converter https://dateful.com/convert/utc -->
         (<a
-          x-href="`https://calendar.google.com/calendar/r/eventedit?text=Web+Day&dates=${webday.isoFlatDateTime(start)}Z/${webday.isoFlatDateTime(end)}Z&details=NEW ROOM! Community Room 1A - First floor.+For+more+details,+link+here:+https://reeds.website/2026/webday&location=Multnomah+County+Library+-+Albina,+205+NE+Russell+St,+Portland,+OR+97212,+USA`"
+          x-href="`https://calendar.google.com/calendar/r/eventedit?text=Web+Day&dates=${webday.isoFlatDateTime(start)}Z/${webday.isoFlatDateTime(end)}Z&details=NEW LIBRARY! Community Room 1A - First floor.+For+more+details,+see+here:+https://clipdx.com/webday&location=Multnomah+County+Library+-+Belmont`"
           >add to your google calendar</a
         >) @
         <span class="p-location"
-          ><strong>NEW ROOM!</strong> Albina Library,
+          ><strong>NEW LIBRARY!</strong> BELMONT Library,
           Community&nbsp;Room&nbsp;1A</span
         >
         (<a
-          href="https://maps.app.goo.gl/knehFhe2ZpHabVre7"
-          title="Albina Library (Google Maps)"
+          href="https://maps.app.goo.gl/LEupXfR8XgfykdrG7"
+          title="Belmont Library (Google Maps)"
           >directions</a
         >)
       </p>
 
       <layout-center>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2794.4523362023715!2d-122.6658426!3d45.5412254!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a73ad8d252db%3A0x1561712005970dfe!2sMultnomah%20County%20Library%20-%20Albina!5e0!3m2!1sen!2sus!4v1761633604924!5m2!1sen!2sus"
-          width="300"
-          height="225"
-          style="border: 0; display: block"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9872.462475239106!2d-122.6252329223518!3d45.51528037107478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a0ed2e48fe49%3A0xfd18fb27e250116a!2sMultnomah%20County%20Library%20-%20Belmont!5e1!3m2!1sen!2sus!4v1788559356751!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerpolicy="strict-origin-when-cross-origin"
         ></iframe>
       </layout-center>
 
