@@ -83,17 +83,16 @@ Watch the docker logs. `-f` is for "follow", like `tail -f`.
 docker compose logs -f
 ```
 
-### local:upload
+### local:upload-config
 
-Uploads local contents to the correct place on the server for normal operation.
+The _do-upload-config.sh_ script will:
 
-Note you must run `local:web-build` before this for any updates to the website to appear.
-
-Any changes to the website will immediately appear (i.e. on refresh of the webpage)
+* Execute a _dry run_ to show what action it plans to take.
+* Prompt you for a y/n confirmation.
+* If confirmed, execute the upload.
 
 ```sh
-rsync -rav . root@clipdx.com:/root/clipdx.com/ --exclude=.git --exclude=web
-rsync -rav ./web/build/ root@clipdx.com:/root/clipdx.com/web-build/
+sh util/do-upload-config.sh
 ```
 
 ### local:web-serve
@@ -112,6 +111,18 @@ cd web/
 rm -rf build
 mkdir build
 DEBUG=* npx html-wiki generate -u entries -o build
+```
+
+### local:upload-web-content
+
+Uploads local web content to the correct place on the server for normal operation.
+
+Note you must run `local:web-build` before this for any updates to the website to appear.
+
+Any changes to the website will immediately appear (i.e. on refresh of the webpage)
+
+```sh
+rsync -rav ./web/build/ root@clipdx.com:/root/clipdx.com/web-build/
 ```
 
 ### local:update-html-wiki
