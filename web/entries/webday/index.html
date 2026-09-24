@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Web Day!</title>
+    <title>Web Surfing Party!</title>
     <base href="/webday/" />
     <meta itemprop="nocontainer" />
     <meta name="description" content="" />
@@ -126,7 +126,7 @@
   <body>
     <set- webday="load('/webday/webday.mts')" />
     <set-
-      start="{year: 2026, month: 9, day: 12, hour: 13, minute: 00, timeZone: 'America/Los_Angeles'}"
+      start="{year: 2026, month: 10, day: 10, hour: 13, minute: 00, timeZone: 'America/Los_Angeles'}"
       end_time="{hour: 17, minute: 30}"
       end="{ ...start, ...end_time }"
     />
@@ -136,9 +136,9 @@
     />
 
     <layout-center fill class="h-event">
-      <h1 class="p-name">Web Day!</h1>
+      <h1 class="p-name">Web Surfing Party!</h1>
 
-      <p class="silly">Create The Web You Want To See!</p>
+      <p class="silly">Free and Open is the bees knees!</p>
 
       <!-- <p>
             <a
@@ -172,7 +172,7 @@
         />
         <!-- Helpful converter https://dateful.com/convert/utc -->
         (<a
-          x-href="`https://calendar.google.com/calendar/r/eventedit?text=Web+Day&dates=${webday.isoFlatDateTime(start)}Z/${webday.isoFlatDateTime(end)}Z&details=NEW LIBRARY! Community Room 1A - First floor.+For+more+details,+see+here:+https://clipdx.com/webday&location=Multnomah+County+Library+-+Belmont`"
+          x-href="`https://calendar.google.com/calendar/r/eventedit?text=Web+Surfing+Party!&dates=${webday.isoFlatDateTime(start)}Z/${webday.isoFlatDateTime(end)}Z&details=NEW LIBRARY! Community Room 1A - First floor.+For+more+details,+see+here:+https://clipdx.com/webday&location=Multnomah+County+Library+-+Belmont`"
           >add to your google calendar</a
         >) @
         <span class="p-location"
@@ -198,29 +198,32 @@
         ></iframe>
       </layout-center>
 
-      <h2>What is Web Day?</h2>
+      <h2>What is a Web Surfing Party?</h2>
 
       <p class="p-summary">
-        When you come to Web Day, you sit with someone and share keyboard,
-        mouse, and browser to explore the Endless Web. We play games (every
-        Flash game ever!), delve into local Portland services and historical
-        data, make new web pages, and click a lot of links.
+        Maybe you've thought to yourself, "the web used to be so cool," or
+        "social media is such a drag". Good news, the Cool Web never went away!
+      </p>
+
+      <p>
+        At the Web Surfing Party, we find the Cool, the Human, the Weird out
+        there, together, in person, side-by-side. We share the laughs, the
+        surprises, the knowledge. Come party and see for yourself!
       </p>
 
       <h2>How does it work?</h2>
 
       <p>
-        You can come in any time, for 5 minutes or an hour. Play one little game
-        or spend the whole time exploring.
+        Pop in any time, for 5 minutes, or an hour, or three. Play one little
+        game or spend the whole time exploring.
       </p>
 
       <p>
-        As the organizer, I will pair you up when you come in. We share a live
-        document (like a Google Doc) of suggested activities to try out, like
-        "find a 2-player game", or "find a page full of jokes". You'll choose
-        one of those or bring up your own idea. Every 30 minutes we get up for 5
-        minutes to stretch, look away from the screen, get a drink of water, and
-        rotate who is paired up so everyone meets different people.
+        We surf (and party!) in many different ways. We often pair up, and
+        switch pairs every so often. Then maybe we "mob" together as a group on
+        the big beautiful screen (thank you Portland library renovations). We
+        take breaks to look away from the screen and towards the world around
+        us.
       </p>
 
       <p>
@@ -233,8 +236,8 @@
 
       <p>
         Maybe as you read the above you thought, "You just surf the web?
-        Seriously?" Exactly! Web Day is silly, mundane, and banal
-        <em>together, in person</em>.
+        Seriously?" Exactly! Web surfing is silly, mundane, and banal, sure. But
+        we do it <em>together, in person</em>.
       </p>
 
       <p>
@@ -262,13 +265,13 @@
       <p>
         Share
         <r- if="mastodon_href">
-          <a x-href="mastodon_href" title="Web Day posted on Mastodon"
+          <a x-href="mastodon_href" title="Web Surfing Pary posted on Mastodon"
             >the event post on Mastodon</a
           >
           and
         </r->
         <r- if="bsky_href">
-          <a x-href="bsky_href" title="Web Day posted on Bluesky"
+          <a x-href="bsky_href" title="Web Surfing Party posted on Bluesky"
             >the event posted on Bluesky</a
           >
           and
