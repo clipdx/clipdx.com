@@ -35,5 +35,9 @@ export const timeHuman = (info: TemporalInfo) => format(tzDate(info), "h:mmaa");
 // 20260308T013000
 // NOTE: This Google Calendar API is weird in that it wants time in UTC but it
 // wants the real date. So have to do them separately
+// export const isoFlatDateTime = (info: TemporalInfo) =>
+//   `${format(tzDate(info), "yyyyMMdd")}T${format(tzDate(info).withTimeZone("UTC"), "kkmm00")}`;
+// BUT THE ABOVE caused a failure (maybe after daylight savings time ended in winter?!)
+// So trying just one consistent time with UTC for all
 export const isoFlatDateTime = (info: TemporalInfo) =>
-  `${format(tzDate(info), "yyyyMMdd")}T${format(tzDate(info).withTimeZone("UTC"), "kkmm00")}`;
+  `${format(tzDate(info).withTimeZone("UTC"), "yyyyMMdd")}T${format(tzDate(info).withTimeZone("UTC"), "kkmm00")}`;
